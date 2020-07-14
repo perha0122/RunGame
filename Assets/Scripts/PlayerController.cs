@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour {
         playerAudio.Play();
         playerRigidbody.velocity = Vector2.zero;
         isDead = true;
+        GameManager.instance.OnPlayerDead();
 
     }
 
